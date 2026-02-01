@@ -30,6 +30,7 @@ public class Trees2 {
         if (t == null)
             return 0;
         if(!t.hasLeft() && !t.hasRight()
+           count++;
         return count + ex14(t.getLeft()) + ex14(t.getRight());
     }
 
