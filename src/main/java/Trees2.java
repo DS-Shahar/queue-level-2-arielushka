@@ -26,9 +26,11 @@ public class Trees2 {
     }
 
     public static int ex14(BinNode<Integer> t) {
+        int count= 0;
         if (t == null)
             return 0;
-        return 1 + ex14(t.getLeft()) + ex14(t.getRight());
+        if(!t.hasLeft() && !t.hasRight()
+        return count + ex14(t.getLeft()) + ex14(t.getRight());
     }
 
     public static boolean ex18(BinNode<Integer> t1, BinNode<Integer> t2) {
